@@ -1,0 +1,14 @@
+.contact {
+        background-image: url(../../images/OriginalDesign/contact-bg.png);
+        background-size: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 420px;
+        text-align: center;
+        padding-top: 67px;
+        padding-bottom: 50px;
+        &__btn{
+            margin-top: 40px;
+        }
+}

@@ -1,0 +1,10 @@
+.florist {
+    padding-top: 125px;
+    padding-bottom: 0px;
+    background: linear-gradient(180deg, #ededed 0%, #ededed 68%, #fff 68%, #fff 100%);
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+}

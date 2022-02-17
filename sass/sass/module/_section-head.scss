@@ -1,0 +1,39 @@
+@use "../global" as g;
+
+.section-head{
+    text-align: center;
+    &__title{
+        font-size: 4rem;
+        letter-spacing: 0.02em;
+        position: relative;
+        font-family: g.$sub-font;
+        font-weight: 600;
+        &::after{
+            content: "";
+            display: inline-block;
+            background-color: #707070;
+            width: 34px;
+            height: 1px;
+            position: absolute;
+            top: 71px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include g.mq(md) {
+                top: 56px;
+                width:27px;
+                height:1px;   
+            }
+    
+        }
+        @include g.mq(md) {
+            font-size: 3.1rem;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        // 31.5/16
+        line-height: 1.96;
+        margin-top: 54px;
+    }
+}
