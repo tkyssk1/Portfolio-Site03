@@ -580,7 +580,7 @@ a {
 }
 
 .fv {
-  background-image: url(../../images/OriginalDesign/fv__picture.png);
+  background-image: url(../images/OriginalDesign/fv__picture.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -616,6 +616,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .fv__sub-title {
+    margin-top: 20px;
     font-size: 1.2rem;
   }
 }
@@ -651,6 +652,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .section-head__title::after {
+    top: 56px;
     width: 27px;
     height: 1px;
   }
@@ -680,6 +682,11 @@ a {
 }
 .concept__img {
   margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+  .concept {
+    padding-top: 68px;
+  }
 }
 
 .works {
@@ -792,7 +799,7 @@ a {
 }
 
 .contact {
-  background-image: url(../../images/OriginalDesign/contact-bg.png);
+  background-image: url(../images/OriginalDesign/contact-bg.png);
   background-size: center;
   background-position: center center;
   background-repeat: no-repeat;
