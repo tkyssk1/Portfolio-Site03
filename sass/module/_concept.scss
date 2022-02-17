@@ -1,0 +1,11 @@
+.concept {
+    padding-top: 111px;
+    padding-bottom: 94px;
+    background: linear-gradient(180deg, #fff 0%, #fff 68%, #ededed 68%, #ededed 100%);
+    &__img {
+        margin-top: 60px;
+    }
+    @include g.mq(md) {
+        padding-top: 68px;
+    }
+}

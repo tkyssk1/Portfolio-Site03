@@ -1,0 +1,8 @@
+@use "../global" as g;
+
+.pc {
+  display: block;
+  @include g.mq(md) {
+    display: none;
+  }
+}

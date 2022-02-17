@@ -1,0 +1,35 @@
+@use "../global" as g;
+
+.header {
+    padding-top: 44px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    @include g.mq(md) {
+        padding-top: 16px;
+    }
+    &__inner {
+        max-width: 1010px;
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        @include g.mq(md) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+    &__contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 89px;
+        @include g.mq(md) {
+            width: 66px;
+        }
+    }
+}

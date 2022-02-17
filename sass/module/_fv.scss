@@ -1,0 +1,37 @@
+@use "../global" as g;
+
+.fv {
+    background-image: url(../../images/OriginalDesign/fv__picture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 48.4375%;
+    position: relative;
+    @include g.mq(md) {
+        height: 355px;
+    }
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__title {
+        max-width: 317px;
+        width: 100%;
+        @include g.mq(md) {
+            max-width: 158.5px;
+        }
+    }
+    &__sub-title {
+        margin-top: 47px;
+        font-size: 2.2rem;
+        letter-spacing: 0.04em;
+        color: #fff;
+        text-align: center;
+        @include g.mq(md) {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+    }
+}
