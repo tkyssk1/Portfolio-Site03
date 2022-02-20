@@ -1,0 +1,46 @@
+@use "../global" as g;
+
+.header-nav {
+    &__items {
+        display: flex;
+        color: #fff;
+    }
+    &__item {
+        margin-right: 30px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    @include g.mq(md) {
+        // flexの対象から外したいので、fixedにしておく
+        position: fixed;
+        // 表示もさせたくないので、隠しておく
+        // display noneだと、transitionが効かない
+        visibility: hidden;
+        transition: 0.5s;
+        opacity: 0;
+        // transitionさせないために先にブロックは作っておく
+        background-color: #000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        background-color: #9b8172;
+        text-align: center;
+        &__items {
+            flex-direction: column;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        &__item {
+            margin-right: 0px;
+            margin-top: 20px;
+        }
+    }
+    &--open {
+        visibility: visible;
+        transition: 0.5s;
+        opacity: 0.9;
+    }
+}

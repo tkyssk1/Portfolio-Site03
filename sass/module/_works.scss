@@ -1,4 +1,10 @@
+@use "../global" as g;
+
 .works {
     padding-top: 114px;
     padding-bottom: 97px;
+    @include g.mq(md) {
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
 }

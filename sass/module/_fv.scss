@@ -1,14 +1,16 @@
 @use "../global" as g;
 
 .fv {
-    background-image: url(../images/OriginalDesign/fv__picture.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    padding-top: 48.4375%;
-    position: relative;
-    @include g.mq(md) {
-        height: 355px;
+    &__inner {
+        background-image: url(../images/OriginalDesign/fv__picture.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-top: 48.4375%;
+        position: relative;
+        @include g.mq(md) {
+            height: 355px;
+        }
     }
     &__content {
         position: absolute;

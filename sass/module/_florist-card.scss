@@ -1,15 +1,20 @@
-// foundation/_base.scss
 @use "../global" as g;
 
 .florist-card {
     max-width: 300px;
     width: 100%;
+    @include g.mq(md) {
+        max-width: calc(690 / 750) * 100%;
+    }
     &__title{
         font-size: 3.0rem;
         letter-spacing: 0.02em;
         font-family: g.$sub-font;
         font-weight: 600;
         margin-top: 23px;
+        @include g.mq(md) {
+            font-size: 2.3rem;
+        }
     }
     &__text{
         font-size: 1.6rem;
@@ -17,5 +22,9 @@
         // 31.5/16
         line-height: 1.96;
         margin-top: 25px;
+        @include g.mq(md) {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
     }
 }

@@ -3,7 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="％ページの紹介文が入ります％">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 以下省略 -->
+  <!-- <meta name="description" content="％ページの紹介文が入ります％">
   <meta property="og:title" content="％SNSに表示されるページのタイトルが入ります％">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="％サイト名が入ります％">
@@ -11,22 +15,20 @@
   <meta property="og:url" content="https://○○○○○○○○">
   <meta property="og:image" content="https://○○○○○○○○/ogp.png">
   <meta name="twitter:title" content="％twitterでシェアされたときのタイトル％">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="twitter:card" content="summary_large_image"> -->
   <!-- title -->
-  <title>タイトルが入ります。</title>
+  <title>Shiro -White flower shop- </title>
   <!-- css -->
   <link href="./sass/style.css" rel="stylesheet">
   <!-- googlefont -->
-  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- bg-cover -->
+    <div class="bg-cover"></div>
   <!-- header -->
   <header class="header">
     <div class="header__inner">
@@ -34,10 +36,21 @@
         <div class="header__logo">
           <img src="./images/OriginalDesign/logo.png" alt="" class="logo">
         </div>
-        <div class="menu-icon">
-          <span class="menu-icon__bar"></span>
-          <span class="menu-icon__bar"></span>
-          <span class="menu-icon__bar"></span>
+        <div class="header-menu">
+          <nav class="header-nav">
+            <ul class="header-nav__items">
+              <li class="header-nav__item"><a href="#concept">Concept</a></li>
+              <li class="header-nav__item"><a href="#works">Works</a></li>
+              <li class="header-nav__item"><a href="#florist">Florist</a></li>
+              <li class="header-nav__item"><a href="#shop">Shop information</a></li>
+              <li class="header-nav__item"><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+          <button class="menu-icon">
+            <span class="menu-icon__bar"></span>
+            <span class="menu-icon__bar"></span>
+            <span class="menu-icon__bar"></span>
+          </button>
         </div>
       </div>
     </div>
@@ -48,17 +61,19 @@
   <main>
     <!-- fv -->
     <section class="fv">
-      <div class="fv__content">
-        <h2 class="fv__title">
-          <img src="./images/OriginalDesign/logo.png" alt="" class="fv__picture">
-        </h2>
-        <p class="fv__sub-title">- White flower shop -</p>
+      <div class="fv__inner">
+        <div class="fv__content">
+          <h2 class="fv__title">
+            <img src="./images/OriginalDesign/logo.png" alt="" class="fv__picture">
+          </h2>
+          <p class="fv__sub-title">- White flower shop -</p>
+        </div>
       </div>
     </section>
     <!-- //fv -->
 
     <!-- concept -->
-    <section class="concept">
+    <section id="concept" class="concept">
       <div class="concept__inner l-inner">
         <div class="section-head concept__head">
           <div class="section-head__title">Concept</div>
@@ -75,7 +90,7 @@
     </section>
     <!-- //concept -->
 
-    <section class="works">
+    <section id="works" class="works">
       <div class="works__inner l-inner">
         <div class="section-head works__head">
           <div class="section-head__title">Works</div>
@@ -140,7 +155,7 @@
     </section>
     <!-- /.works -->
 
-    <section class="florist">
+    <section id="florist" class="florist">
       <div class="florist__inner l-inner">
         <div class="section-head florist__head">
           <div class="section-head__title">Florist</div>
@@ -177,7 +192,7 @@
     </section>
     <!-- /.florist -->
 
-    <section class="shop">
+    <section id="shop" class="shop">
       <div class="shop__inner l-inner">
         <div class="section-head shop__head">
           <div class="section-head__title">Shop information</div>
@@ -221,7 +236,8 @@
       </div>
     </section>
     <!-- /.shop -->
-    <div class="top-contact">
+
+    <div id="contact" class="top-contact">
       <section class="top-contact__contact contact">
         <div class="contact__inner l-inner">
           <div class="section-head contact__head">
@@ -253,8 +269,6 @@
     </div>
   </footer>
   <!-- //footer -->
-
-  <div class="bg-cover"></div>
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"

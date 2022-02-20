@@ -2,11 +2,14 @@
 
 .header {
     padding-top: 44px;
+    padding-bottom: 44px;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    //bg-coverのz-index: 10;より大きく
+    z-index: 20;
     @include g.mq(md) {
         padding-top: 16px;
+        padding-bottom: 16px;
     }
     &__inner {
         max-width: 1010px;
@@ -31,5 +34,9 @@
         @include g.mq(md) {
             width: 66px;
         }
+    }
+    &--bg-change {
+        background-color: #9b8172;
+        transition: 0.5s;
     }
 }

@@ -1,10 +1,19 @@
+@use "../global" as g;
+
 .florist {
     padding-top: 125px;
     padding-bottom: 0px;
     background: linear-gradient(180deg, #ededed 0%, #ededed 68%, #fff 68%, #fff 100%);
+    @include g.mq(md) {
+        padding-top: 90px;
+        background: linear-gradient(180deg, #ededed 0%, #ededed 23%, #fff 23%, #fff 100%);
+    }
     &__item{
         display: flex;
         justify-content: space-between;
         padding-top: 60px;
+        @include g.mq(md) {
+            display: block;
+        }
     }
 }

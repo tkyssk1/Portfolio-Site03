@@ -1,3 +1,11 @@
+@use "../global" as g;
+
 .florist-cards {
-    
+    &__card{
+        @include g.mq(md) {
+            margin: 100px auto 0px;
+        }
+
+    }
+
 }

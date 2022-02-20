@@ -1,0 +1,29 @@
+@use "../global" as g;
+
+.bg-cover {
+  // 通常は非表示
+  visibility: hidden;
+  // ブラウザの定位置に固定
+  position: fixed;
+  /* 背景色を黒色に */
+  background-color: #000;
+  // transitionを効かせるため
+  opacity: 0;
+  /* 要素の横幅を画面全体に */
+  width: 100%;
+  /* 要素の高さを画面全体に */
+  height: 100%;
+  /* 要素の固定位置をブラウザ最上部に合わせる */
+  top: 0;
+  /* 要素の固定位置をブラウザ左側に合わせる */
+  left: 0;
+  /* 要素をコンテンツより前面に（要調整） */
+  z-index: 10;
+  // 0.5秒で変更
+  transition: 0.5s;
+  &--open {
+    visibility: visible;
+    transition: 0.5s;
+    opacity: 0.8;
+  }
+}
