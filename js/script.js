@@ -22,7 +22,7 @@ jQuery(function ($) {
     })
 
     //ハンバーガーボタン押下
-    $(".header-menu").on("click", function () {
+    $(".menu-icon").on("click", function () {
         $("body").toggleClass("noscroll");
         $(".bg-cover").toggleClass("bg-cover--open");
         $(".header-nav").toggleClass("header-nav--open");
